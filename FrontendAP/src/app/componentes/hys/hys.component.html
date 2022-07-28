@@ -1,0 +1,22 @@
+<div class="row">
+    <h1>Hard and soft skills</h1>
+     <div class="text-center ccol-sm-4 md-4 col-lg-4"  *ngFor="let hys of hysList">
+             <h3>{{hys.nombreSkill}}</h3>                
+             <circle-progress  
+                 [percent]= "hys.percentSkill"
+                 [showTitle]= "true"
+                 [radius]="110"
+                 [outerStrokeWidth]="10"
+                 [innerStrokeWidth]="4"
+                 [outerStrokeColor]="'orange'"
+                 [innerStrokeColor]="'#ffffff'"
+                 [titleFontSize]="'20px'"
+                 [titleColor]="'black'"
+                 [showSubtitle]="false"
+                 [showUnits]="false"
+                 [animation]="true"
+                 [animationDuration]="500" 
+                 ></circle-progress> 
+     </div> 
+ 
+ </div>
